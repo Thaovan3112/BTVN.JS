@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="BT2.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="BT2.js"></script>
+    <title></title>
+</head>
+<body>
+    <div class="header col-sm-12">
+        <div class="search-box">
+            <form class="form-inline">
+            <input class="form-control mr-sm-1" type="search" placeholder="Nhập tin tức cần tìm..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="left-sidebar col-sm-2">
+            <div class="list-group action-list" id="sidebar">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    Product list
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Category</a>
+                <a href="#" class="list-group-item list-group-item-action">news</a>
+                <a href="#" class="list-group-item list-group-item-action">Membership</a>
+                <a href="#" class="list-group-item list-group-item-action">Ordered prduct</a>
+            </div>
+            <div class="adding-list-item list-group-item" id="addItemsidebar">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="New item..." name="add">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" onclick="addItem()">Add</button>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="main-page col-sm-10">
+            <div class="card-row">
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 1</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">blacK</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 2</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 3</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 4</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 5</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 6</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-row">
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 7</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone 9</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cdn.tgdd.vn/Files/2021/01/04/1317960/san-pham-cua-apple-2021-hinh1_800x450.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Iphone x</h5>
+                          <p class="card-text">A brand new Apple product which provide various option for you to choose</p>
+                          <div class="dropdown color-select">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Choose color
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">black</a>
+                              <a class="dropdown-item" href="#">White</a>
+                              <a class="dropdown-item" href="#">Gold</a>
+                            </div>
+                          </div>
+                          <a href="#" class="btn btn-primary">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>   
+    </div>
+    <div class="footer col-sm-12"></div>
+</body>
+</html> 

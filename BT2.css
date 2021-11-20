@@ -1,0 +1,72 @@
+.header{
+    background-color: aquamarine;
+    height: 10vh;
+}
+.footer{
+    background-color: white;
+    height: 10vh;
+}
+.left-sidebar, .right-sidebar{
+    background-color: white;
+    padding: 0em;
+}
+.main-page{
+    background-color: rgb(245, 238, 228);
+}
+.color-select{
+    margin: 0.5em 0em;
+}
+.search-box{
+    padding: 14px;
+    float: right;
+}
+.form-inline .form-control{
+    width: 300px;
+}
+.btn-outline-success{
+    background-color: white;
+    color: black;
+}
+.action-list{
+    border-radius: 0;
+}
+.card-row{
+    display: inline-flex;
+}
+.card-box{
+    padding: 16px;
+}
+.card-text{
+    overflow: hidden;
+    width: 246px;
+    height: 96px;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+h3{
+    margin: 10px 16px;
+}
+.row{
+    width: 100%;
+    margin: 0;
+} 
+@media only screen  and (max-width: 600px){
+    .header{
+        background-color: rgb(60, 187, 226);
+    }
+    .btn-outline-success{
+        background-color: gray;
+        color: white;
+    }
+    .card-row{
+        display: block;
+    }
+    .list-group-item.active{
+        background-color: rgb(178, 231, 108);
+    }
+    .action-list{
+        display: block;
+    }
+}
